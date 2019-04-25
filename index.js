@@ -2,7 +2,8 @@ const { ApolloServer } = require('apollo-server')
 
 const server = new ApolloServer({
   modules: [
-    require('./modules/product')
+    require('./modules/product'),
+    require('./modules/category')
   ]
 })
 

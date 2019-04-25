@@ -2,14 +2,14 @@ const { gql } = require('apollo-server')
 
 const typeDefs = gql`
   extend type Query {
-      product(id: ID!): Product
-      products: [Product]
+    product(id: ID!): Product
+    products: [Product]
   }
 
   type Product {
-      id: ID!
-      name: String!
-      price: Int!
+    id: ID!
+    name: String!
+    price: Int!
   }
 `
 
